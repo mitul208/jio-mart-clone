@@ -1,0 +1,36 @@
+.signUpForm {
+    width: 500px;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 24px;
+    margin: 50px auto;
+}
+
+.signUpFormHeader {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 15px;
+}
+
+.formInput {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+
+}
+
+.ageErre {
+    font-size: 13px;
+    font-weight: 600;
+    color: red;
+}
+
+.signUpBlock {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

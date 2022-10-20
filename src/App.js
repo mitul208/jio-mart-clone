@@ -1,10 +1,11 @@
 
 import './App.css';
+import SignUp from './pages/sign-up/SignUp';
 
 function App() {
   return (
     <>
-    <h1>Jio Mart Clone</h1>
+    <SignUp />
     </>
   );
 }
