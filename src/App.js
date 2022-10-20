@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-        Jio Mart Clone App
+        Jio Mart Clone App changes in feartue sign up branch
         </p>
         <a
           className="App-link"
