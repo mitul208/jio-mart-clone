@@ -4,6 +4,9 @@ import TextField from "@mui/material/TextField";
 import { FormGroup, Button } from "@mui/material";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useDispatch } from "react-redux";
+import { addUser } from "../../redux/Action/action";
+import { Link, useNavigate } from "react-router-dom";
 
 const SignUp = () => {
   const [formData, setFormData] = useState({
@@ -65,8 +68,12 @@ const SignUp = () => {
       : toast.error("your password have a match");
   };
 
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
   const formSubmited = () => {
-    console.log(formData);
+    dispatch(addUser(formData));
+    navigate("/login");
     setFormData({
       firstname: "",
       lastname: "",
@@ -176,6 +183,9 @@ const SignUp = () => {
             </FormGroup>
           </div>
         </form>
+        <p style={{ margin: "0" }}>
+          Already have an account ? <Link to="/login">LogIn</Link>
+        </p>
       </div>
     </>
   );
